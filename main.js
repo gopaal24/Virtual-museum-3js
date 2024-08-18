@@ -147,7 +147,7 @@ let height_raycast_dist = 2;
 
 // function to check collisions
 
-new RGBELoader().load("assets/compressed.glb", function (hdri) {
+new RGBELoader().load("./assets/compressed.glb", function (hdri) {
   hdri.mapping = THREE.EquirectangularReflectionMapping;
 
   scene.environment = hdri;
@@ -240,7 +240,7 @@ scene.add(light);
 
 //GLTF loader
 const loader = new GLTFLoader(manager);
-loader.load("assets/museum_final_01.glb", (gltf) => {
+loader.load("./assets/museum_final_01.glb", (gltf) => {
   model = gltf.scene;
   model.traverse((mesh) => {
     mesh.castShadow = true;
@@ -493,7 +493,7 @@ function hotspot_cam_view() {
         new THREE.MeshBasicMaterial()
       );
       new RGBELoader().load(
-        "assets/museum_of_ethnography_2k.hdr",
+        "./assets/museum_of_ethnography_2k.hdr",
         function (hdri) {
           hdri.mapping = THREE.EquirectangularReflectionMapping;
           scene_.environment = hdri;
@@ -1351,7 +1351,7 @@ function player_cam() {
         new THREE.MeshBasicMaterial()
       );
       new RGBELoader().load(
-        "assets/museum_of_ethnography_2k.hdr",
+        "./assets/museum_of_ethnography_2k.hdr",
         function (hdri) {
           hdri.mapping = THREE.EquirectangularReflectionMapping;
           scene_.environment = hdri;
