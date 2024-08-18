@@ -180,6 +180,7 @@ let data;
 
 manager.onLoad = function () {
   instructions_el.style.display = "flex";
+  console.log("model", model);
   let collider_mesh = model.children[0].children[0]; //pushing the collider object to an array
   collider_mesh_array = model.children[0].children[0].children; //pushing the collider object to an array
   loaded = true;
