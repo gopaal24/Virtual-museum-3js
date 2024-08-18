@@ -147,7 +147,7 @@ let height_raycast_dist = 2;
 
 // function to check collisions
 
-new RGBELoader().load("./assets/compressed.glb", function (hdri) {
+new RGBELoader().load("./assets/museum_of_ethnography_2k.hdr", function (hdri) {
   hdri.mapping = THREE.EquirectangularReflectionMapping;
 
   scene.environment = hdri;
